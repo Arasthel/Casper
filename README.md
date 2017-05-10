@@ -83,7 +83,7 @@ Those are the variables you will need to define in order to show your social pro
 var github_user = 'YOUR_GITHUB_USERNAME';
 
 // Linkedin
-var linkedin_user = 'YOUR_LINKEDIN_USER';
+var linkedin_url = 'YOUR_LINKEDIN_URL';
 ```
 
 > ### Twitter and Facebook

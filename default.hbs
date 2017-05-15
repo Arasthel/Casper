@@ -24,10 +24,13 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 
     {{!-- Jquery --}}
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript"
+        src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
     {{!-- Syntax Highlighting --}}
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/github-gist.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     <style>  
         pre {
@@ -46,16 +49,12 @@
     </style> 
 
     {{!-- Font-Awesome --}}
-    {{!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"> --}}
-    {{!-- <link rel="stylesheet" href="https://use.fontawesome.com/4f66b3cd63.css"> --}}
     <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.min.css"
-
-
 
     {{!-- Ghost outputs important style and meta data with this tag --}}
     {{ghost_head}}
-</head>
-<body class="{{body_class}} nav-closed">
+    </head>
+    <body class="{{body_class}} nav-closed">
 
     {{!-- The blog navigation links --}}
     {{navigation}}

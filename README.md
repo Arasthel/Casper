@@ -9,38 +9,51 @@ A theme for [Ghost](http://github.com/tryghost/ghost/) based on the default Ghos
 As it's based on Casper, the general look and feel is the same you would get with it, but we added some features that will enhance your experience using it:
 
 * **Code syntax highlight**: when writing fenced code blocks (those surrounded by backticks (`` ``` ``) ), you can add the language after the opening quotes, and the HTML output will be highlighted according to the language.
-    * If no language is specified, the engine will try to guess it
-    * Provided by [Highlight.js](https://highlightjs.org/)
+  * If no language is specified, the engine will try to guess it
+  * Provided by [Highlight.js](https://highlightjs.org/)
 * **Disqus** as a comment system: if you use Disqus as a comment system, you will only need to define your Disqus shortname and it will be all set.
-    * The comments will be lazy-loaded only when the user clicks the "Load comments" button, so no unnecessary requests are made
+  * The comments will be lazy-loaded only when the user clicks the "Load comments" button, so no unnecessary requests are made
 * **Revamped side menu**: the standard side menu felt old and incomplete. The new menu has a flat, simple style.
 * **'Reading Time' header on posts:** added a simple 'reading time' header based on post length.
 * **Default Home icon** in case you didn't add a Blog icon.
 * **Social profiles**: On the lower part of the new side menu, you will be able to show links to your social profiles. Currently, the ones supported are:
-    * Twitter
-    * Facebook
-    * Github
-    * Linkedin
+  * Twitter
+  * Facebook
+  * Github
+  * Linkedin
+  * Telegram
+* **Post description** The description of the post is taken from the meta description (If it is).
 
 ## Screenshots
 
-
 <details>
 <summary>Side menu</summary>
-![Side Menu](http://i.imgur.com/uPrVuJ1.jpg)
+
+![Side Menu](assets/screenshots/side_menu_screen.png?raw=true "Side menu")
+
 </details>
 <details>
 <summary>Reading time</summary>
-![Reading time](http://i.imgur.com/lckpNQS.jpg)
+
+![Reading time](assets/screenshots/read_time_screen.png?raw=true "Reading time")
+
 </details>
 <details>
 <summary>Syntax Highlight</summary>
-![Syntax Highlight](http://i.imgur.com/rShTIFi.jpg)
+
+![Syntax Highlight](assets/screenshots/syntax_highlight_screen.png?raw=true "Syntax Highlight")
+
 </details>
 <details>
 <summary>Comments</summary>
-![Comments](http://i.imgur.com/7gkWwY7.jpg)
+
+![Comments](assets/screenshots/comment_screen.png?raw=true "Comment")
+
 </details>
+
+
+
+
 ## Why
 
 We liked the Ghost default theme, but we thought it lacked some things, such as Syntax Highlighting or easy integration with a comment system.
@@ -104,9 +117,18 @@ var telegram_channel = 'YOUR_CHANNEL_NAME'
 </script>
 ```
 
+### ToDo
+
+- [x] Update highlight.js 9.6.0 to 9.11.0
+- [x] Change description of the post from meta description by default
+- [x] Update jquery 1.12.0 to 1.12.4
+- [ ] Add a variable that specifies how to take a description of the post (or meta description or from the beginning of the post)
+- [ ] Add link "Fork This Theme" to footer on main page.
+- [ ] Update Casper theme from base repositary.
+
 ## Copyright & License
 
-Copyright (c) 2013-2016 Ghost Foundation - Released under the MIT License.
+Copyright (c) 2013-2017 Ghost Foundation - Released under the MIT License.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

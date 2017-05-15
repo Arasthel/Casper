@@ -12,7 +12,7 @@
     <section class="post-excerpt">
         {{!-- TODO: add variable for view meta_description or excerpt words --}}
         {{#if meta_description}}
-            <p><a class="read-more" href="{{url}}">{{meta_description}}</a></p>
+            <p><a class="read-more" href="{{url}}">{{meta_description}}&nbsp;&raquo;</a></p>
         {{else}}
             <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
         {{/if}}

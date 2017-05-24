@@ -67,11 +67,12 @@
         {{!-- The tiny footer at the very bottom --}}
         <footer class="site-footer clearfix">
             <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
-            <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost blog</a>. Fork this <a href="https://ghost.org">theme</a>.
-            
-            
+            <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a>.
+            <p class="footer-icon hidden" id="footer-icon">
+            <a href=""><i class="fa fa-code-fork fa-lg"></i> Fork this theme</a>. 
+            <script> if (typeof forked_url !== 'undefined') { $('#footer-icon').removeClass('hidden'); $('#footer-icon a').attr('href', forked_url); } </script>
+            </p>
             </section>
-            {{!-- <section class="forked">Fork this <a href="https://ghost.org">theme</a></section> --}}
         </footer>
 
     </div>

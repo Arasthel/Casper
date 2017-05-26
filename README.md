@@ -52,9 +52,6 @@ As it's based on Casper, the general look and feel is the same you would get wit
 
 </details>
 
-
-
-
 ## Why
 
 We liked the Ghost default theme, but we thought it lacked some things, such as Syntax Highlighting or easy integration with a comment system.
@@ -133,7 +130,7 @@ var forked_url = 'https://github.com/your_username/Ghostly'
 - [x] Change description of the post from meta description by default
 - [x] Update jquery 1.12.0 to 1.12.4
 - [ ] Add a variable that specifies how to take a description of the post (or meta description or from the beginning of the post)
-- [x] Add link "Fork This Theme" to footer on main page.
+- [x] Add link "Fork This Theme" to footer page.
 - [ ] Update Casper theme from base repositary.
 
 ## Copyright & License

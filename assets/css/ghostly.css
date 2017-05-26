@@ -123,3 +123,11 @@ li.social-icon {
     position: initial;
     margin: 30px;
 }
+
+/* ===============
+   FOOTER
+   =============== */
+
+p.footer-icon {
+    display:inline;
+}

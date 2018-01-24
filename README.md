@@ -4,6 +4,8 @@ A theme for [Ghost](http://github.com/tryghost/ghost/) based on the default Ghos
 
 [Demo here](https://ghostly.dexa-dev.com/)
 
+> There's a branch for users who use ghost 0.X. The master branch is prepared for ghost 1.X
+
 ## What does it provide
 
 As it's based on Casper, the general look and feel is the same you would get with it, but we added some features that will enhance your experience using it:

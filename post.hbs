@@ -8,8 +8,8 @@ the {{{body}}} of the default.hbs template, containing the blog header/footer. -
 {{!-- Everything inside the #post tags pulls data from the post --}}
 {{#post}}
 
-<header class="main-header post-head {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
-    <nav class="main-nav {{#if image}}overlay{{/if}} clearfix">
+<header class="main-header post-head {{#if feature_image}}" style="background-image: url({{img_url feature_image}}){{else}}no-cover{{/if}}">
+    <nav class="main-nav {{#if feature_image}}overlay{{/if}} clearfix">
         {{#if @blog.logo}}
           <a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>
         {{else}}
@@ -39,9 +39,9 @@ the {{{body}}} of the default.hbs template, containing the blog header/footer. -
             {{!-- Everything inside the #author tags pulls data from the author --}}
             {{#author}}
 
-            {{#if image}}
+            {{#if profile_image}}
             <figure class="author-image">
-                <a class="img" href="{{url}}" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></a>
+                <a class="img" href="{{url}}" style="background-image: url({{img_url profile_image}})"><span class="hidden">{{name}}'s Picture</span></a>
             </figure>
             {{/if}}
 
@@ -102,7 +102,7 @@ the {{{body}}} of the default.hbs template, containing the blog header/footer. -
     <script>
       var my = my || {};
       if(disqus_shortname != null){
-        var disqus_identifier = '{{id}}';
+        var disqus_identifier = '{{comment_id}}';
         my.loadDisqus = function() {
             var dsq = document.createElement('script');
             dsq.type = 'text/javascript';
@@ -130,7 +130,7 @@ the {{{body}}} of the default.hbs template, containing the blog header/footer. -
 {{!-- Links to Previous/Next posts --}}
 <aside class="read-next">
     {{#next_post}}
-    <a class="read-next-story {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
+    <a class="read-next-story {{#if feature_image}}" style="background-image: url({{img_url feature_image}}){{else}}no-cover{{/if}}" href="{{url}}">
         <section class="post">
             <h2>{{title}}</h2>
             <p>{{excerpt words="19"}}&hellip;</p>
@@ -138,7 +138,7 @@ the {{{body}}} of the default.hbs template, containing the blog header/footer. -
     </a>
     {{/next_post}}
     {{#prev_post}}
-    <a class="read-next-story prev {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
+    <a class="read-next-story prev {{#if feature_image}}" style="background-image: url({{img_url feature_image}}){{else}}no-cover{{/if}}" href="{{url}}">
         <section class="post">
             <h2>{{title}}</h2>
             <p>{{excerpt words="19"}}&hellip;</p>

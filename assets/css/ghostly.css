@@ -122,4 +122,14 @@ li.social-icon {
 .subscribe-button {
     position: initial;
     margin: 30px;
+    font-size: 13px;
+    line-height: 39px;
+}
+
+/* ===============
+   FOOTER
+   =============== */
+
+p.footer-icon {
+    display:inline;
 }

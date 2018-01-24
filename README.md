@@ -25,6 +25,7 @@ As it's based on Casper, the general look and feel is the same you would get wit
   * Linkedin
   * Telegram
 * **Post description** The description of the post is taken from the meta description (If it is).
+* **Link on repositories** On the footer link to the repository (GitHub, e.t.c.) "Fork this theme"
 
 ## Screenshots
 
@@ -52,9 +53,6 @@ As it's based on Casper, the general look and feel is the same you would get wit
 ![Comments](assets/screenshots/comment_screen.png?raw=true "Comment")
 
 </details>
-
-
-
 
 ## Why
 
@@ -105,6 +103,15 @@ var linkedin_url = 'YOUR_LINKEDIN_USER_LINK';
 var telegram_channel = 'YOUR_CHANNEL_NAME'
 ```
 
+### Fork this page link
+
+To have a link to the theme repository, use the variable `forked_url`.
+
+```javascript
+// Link on Github page
+var forked_url = 'https://github.com/your_username/Ghostly'
+```
+
 > ### Twitter and Facebook
 > Twitter and Facebook profiles will be taken from the blog defaults, defined under the *General* section
 
@@ -125,7 +132,7 @@ var telegram_channel = 'YOUR_CHANNEL_NAME'
 - [x] Change description of the post from meta description by default
 - [x] Update jquery 1.12.0 to 1.12.4
 - [ ] Add a variable that specifies how to take a description of the post (or meta description or from the beginning of the post)
-- [ ] Add link "Fork This Theme" to footer on main page.
+- [x] Add link "Fork This Theme" to footer page.
 - [ ] Update Casper theme from base repositary.
 
 ## Copyright & License
